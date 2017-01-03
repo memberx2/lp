@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+/* Colors
+========================================================================== */
+$color_default:				#464646;
+$color_black:  				#000;
+$color_white:  				#fff;
+
+$color_1:     	$color_black;
+$color_2:     	$color_white;
+$color_3:     	#d4213d;			// red
+
+$colors:
+    $color_1,
+    $color_2,
+    $color_3;
+
+$color_default_link:		$color_3;
+
+
+/* Gridle custom classes
+========================================================================== */
+$gutterTopNumber:                               10;
+$gutterBottomNumber:                            10;
+$gutterRightNumber:                             10;
+$gutterLeftNumber:                              10;
+$gutterNumber:                                  10;
+$spacingTopNumber:                              10;
+$spacingBottomNumber:                           10;
+$spacingRightNumber:                            10;
+$spacingLeftNumber:                             10;
+
+
+/* Sizes
+========================================================================== */
+$size_inner:        				1240px;
+$size_gutter:       				20px;
+
+$size_btn:							48px;
+
+
+/* Fonts
+========================================================================== */
+$font_default: 		Arial, sans-serif;
+$font_ico: 			'fontello';
+
+/* Breakpoints
+========================================================================== */
+$breakpoints: (
+    "desktop-small": (
+        "brakepoint": (max-width $size_inner + $size_gutter*4),
+        "gridle": "screen and (max-width: #{$size_inner + $size_gutter*4})"
+    ),
+    "tablet": (
+        "brakepoint": (max-width 1024px),
+        "gridle": "screen and (max-width: 1024px)"
+    ),
+    "tablet-landscape": (
+        "brakepoint": ((max-width 1024px) (orientation landscape)),
+        "gridle": "screen and (max-width: 1024px) and (orientation : landscape)"
+    ),    
+    "mobile": (
+        "brakepoint": (max-width 767px),
+        "gridle": "screen and (max-width: 767px)"
+    )
+);
