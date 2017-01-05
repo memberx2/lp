@@ -1,5 +1,29 @@
 .statistics {
-    background: url("./src/img/statistics-background.png") no-repeat center center fixed;
+    background: url("../img/statistics-background.png") no-repeat 50% 50%;
     background-size: cover;
-    background-color: red;
+    padding: 140px 0;
 }
+
+.statistics-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    align-items: center;
+}
+
+.statistics-list-item {
+    flex-basis: 284px;
+    height: 180px;
+    padding-top: 56px;
+}
+
+.line {
+        border-right: 1px solid #6c6c73;
+}
+
+.numbers {}
+
+.statistics-name {}

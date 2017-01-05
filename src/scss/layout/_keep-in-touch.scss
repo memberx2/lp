@@ -1,4 +1,63 @@
 .keep-in-touch {
-    background: url("./src/img/keep-in-touch-background.png") no-repeat center center fixed;
+    background: url("../img/keep-in-touch-background.png") no-repeat center center;
     background-size: cover;
+}
+
+.kit-container {
+    width: 572px;
+    margin: 0 auto;
+    padding: 130px 0 160px;
+    text-align: center;
+}
+
+.kit-title {
+    text-align: center;
+    font-size: 35px;
+    font-weight: normal;
+    padding-bottom: 66px;
+}
+
+.kit-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #646e76;
+    background-color: transparent;
+}
+
+.name {
+    flex-basis: 263px;
+}
+
+.email {
+    flex-basis: 263px;
+}
+
+.message {
+    flex-basis: 570px;
+    margin-top: 92px;
+}
+
+.kit-button {
+    margin: 72px 0 0 197px;
+}
+
+ ::-webkit-input-placeholder {
+    color: #666666;
+    font-size: 16px;
+}
+
+ ::-moz-placeholder {
+    color: #666666;
+    font-size: 16px;
+}
+
+ :-ms-input-placeholder {
+    color: #666666;
+    font-size: 16px;
 }

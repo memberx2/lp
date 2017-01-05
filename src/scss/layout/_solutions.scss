@@ -1,0 +1,36 @@
+.solutions {
+
+}
+
+.solutions-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.solutions-text-container {
+    width: 57%;
+    margin: 0 184px 0 389px;
+}
+
+.solutions-title {
+    font-weight: normal;
+    font-size: 35px;
+    padding-bottom: 46px;
+    margin-top: 70px;
+    color: #3b434c;
+}
+
+.solutions-description {
+    font-size: 15px;
+    padding-bottom: 35px;
+}
+
+.solutions-button {
+    margin-top: 6px;
+}
+
+.solutions-image {
+    height: 100%;
+    object-fit: cover;
+}

@@ -5,12 +5,27 @@
     <meta charset="utf-8">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> {% include "head/head-links.tpl" %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> {% include "head/head-links.tpl" %}
 </head>
 
 <body>
     {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/footer.tpl" as l_footer %} {{l_header.render()}}
+    <div class="pros">
+        <ul class="pros-list">
+            <li class="pros-list-item">
+                <span class="pros-icon"></span>
+                <p class="pros-text">FIXED PRICE PROJECTS</p>
+            </li>
+            <li class="pros-list-item">
+                <span class="pros-icon"></span>
+                <p class="pros-text">RECIEVE ON TIME</p>
+            </li>
+            <li class="pros-list-item">
+                <span class="pros-icon"></span>
+                <p class="pros-text">SATISFACTION GURANTEED</p>
+            </li>
+        </ul>
+    </div>
     <section class="feature">
         <div class="feature-container">
             <img class="feature-image" src="./src/img/left-image.png" alt="" />
@@ -72,15 +87,17 @@
         </div>
     </section>
     <section class="solutions">
-        <div class="solutions-text-container">
-            <h1 class="solutions-title">Technical Solutions Exclusively for Agencies</h1>
-            <p class="solutions-description">Focus on core of your bussines: getting new clients, building portfolio, polishing the designs - let us care
-                about technology.</p>
-            <p class="solutions-description">Not every project should be done by your core team. You don't need to resign from projects because of lack of
-                work force anymore.</p>
-            <button class="button solutions-button">Learn More</button>
+        <div class="solutions-container">
+            <div class="solutions-text-container">
+                <h1 class="solutions-title">Technical Solutions Exclusively for Agencies</h1>
+                <p class="solutions-description">Focus on core of your bussines: getting new clients, building portfolio, polishing the designs - let us care
+                    about technology.</p>
+                <p class="solutions-description">Not every project should be done by your core team. You don't need to resign from projects because of lack
+                    of work force anymore.</p>
+                <button class="button solutions-button">Learn More</button>
+            </div>
+            <img class="solutions-image" src="./src/img/right-image.png" alt="" />
         </div>
-        <img class="solutions-image" src="./src/img/right-image.png" alt="" />
     </section>
     <section class="team">
         <div class="inner">
@@ -129,15 +146,15 @@
     <section class="statistics">
         <div class="inner">
             <ul class="statistics-list">
-                <li class="statistics-list-item">
+                <li class="statistics-list-item line">
                     <h2 class="numbers">12,458+</h2>
                     <p class="statistics-name">Projects Completed</p>
                 </li>
-                <li class="statistics-list-item">
+                <li class="statistics-list-item line">
                     <h2 class="numbers">1,796+</h2>
                     <p class="statistics-name">Satisfied Clients</p>
                 </li>
-                <li class="statistics-list-item">
+                <li class="statistics-list-item line">
                     <h2 class="numbers">1,000+</h2>
                     <p class="statistics-name">Positive Feedbacks</p>
                 </li>
@@ -149,12 +166,12 @@
         </div>
     </section>
     <section class="keep-in-touch">
-        <div class="inner">
-            <h1 class="keep-in-touch-title">Keep in Touch</h1>
+        <div class="kit-container">
+            <h1 class="kit-title">Keep in Touch</h1>
             <form class="kit-form">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="E-mail">
-                <input type="text" placeholder="Message">
+                <input class="name input" type="text" placeholder="Name">
+                <input class="email input" type="text" placeholder="E-mail">
+                <input class="message input" type="text" placeholder="Message">
                 <button class="button kit-button">Send Message</button>
             </form>
         </div>
