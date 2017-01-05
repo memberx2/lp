@@ -1,0 +1,37 @@
+.focus {
+    text-align: center;
+}
+
+.focus-title {
+    font-size: 35px;
+    padding-top: 154px;
+    margin-bottom: 68px;
+}
+
+.focus-list {
+    list-style-type: none;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:after {
+        content: '';
+        border-bottom: 1px solid #d5d8da;
+        top: 42px;
+        left: 65px;
+        width: 90%;
+        position: absolute;
+    }
+}
+
+.focus-list-item {}
+
+.creative-text {
+    font-size: 20px;
+}
+
+.focus-text {
+    font-size: 16px;
+    font-weight: lighter;
+    padding-bottom: 152px;
+}
