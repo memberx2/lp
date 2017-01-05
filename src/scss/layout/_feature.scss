@@ -1,0 +1,25 @@
+.feature {
+
+}
+
+.feature-container {
+    margin-top: 227px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.feature-image {
+    width: 40%;
+}
+
+.feature-text-container {
+    width: 60%;
+    margin-left: 105px;
+    margin-top: 134px;
+    margin-right: 372px;
+}
+
+.feature-description {
+    word-break: break-word;
+}

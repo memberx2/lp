@@ -1,3 +1,28 @@
-.l-header {
-   //
+.header {
+   background-color: #200a32;
+   font-family: 'Roboto', sans-serif;
+   color: #fff;
+}
+
+.header-logo {
+    margin-top: 48px;
+}
+
+.header-subtitle {
+    font-size: 30px;
+    margin-top: 242px;
+}
+
+.header-title{
+    font-size: 55px;
+    padding: 28px 0;
+}
+
+.header-description {
+    font-size: 24px;
+    padding-bottom: 42px;
+}
+
+.header-button {
+    margin-bottom: 282px;
 }

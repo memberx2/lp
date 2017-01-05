@@ -27,12 +27,19 @@
 
 /* Layouts and main layout elements
    ========================================================================== */
-@import "layout/common";
+// @import "layout/common";
 @import "layout/header";
 // @import "layout/hero";
 @import "layout/main";
 @import "layout/footer";
 @import "layout/sections";
+@import "layout/feature";
+@import "layout/services";
+@import "layout/focus";
+@import "layout/keep-in-touch";
+@import "layout/solutions";
+@import "layout/statistics";
+@import "layout/team";
 // @import "layout/popups";
 
 
@@ -48,6 +55,7 @@
    ========================================================================== */
 @import "base/utilities";
 @import "base/text-styles";
+@import "base/common";
 
 
 /* Vendor CSS
