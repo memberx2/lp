@@ -2,6 +2,7 @@
     background-color: #f7f7f7;
     text-align: center;
     color: #3b434c;
+    font-family: 'Roboto', sans-serif;
 }
 
 .clearfix {
@@ -32,6 +33,9 @@
     height: 350px;
     &:hover {
         border-bottom: 3px solid #e9654c;
+        .service-image {
+            color: #e9654c;
+        }
     }
 }
 
@@ -47,4 +51,17 @@
     width: 200px;
     margin: 0 auto;
     line-height: 20px;
+}
+
+.service-image {
+    padding-top: 66px;
+    font-size: 39px;
+}
+
+.icon-basic-smartphone {
+    font-size: 30px;
+}
+
+.icon-basic-tablet {
+    margin-right: -24px;
 }

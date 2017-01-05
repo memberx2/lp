@@ -2,6 +2,7 @@
     background: url("../img/statistics-background.png") no-repeat 50% 50%;
     background-size: cover;
     padding: 140px 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .statistics-list {
@@ -17,13 +18,29 @@
 .statistics-list-item {
     flex-basis: 284px;
     height: 180px;
-    padding-top: 56px;
+    padding-top: 50px;
+    position: relative;
 }
 
 .line {
+    &:after {
+        content: '';
         border-right: 1px solid #6c6c73;
+        transform: rotate(30deg);
+        position: absolute;
+        top: 0px;
+        height: 110%;
+        right: 0px;
+    }
 }
 
-.numbers {}
+.numbers {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 27px;
+}
 
-.statistics-name {}
+.statistics-name {
+    font-size: 16px;
+    font-weight: normal;
+}

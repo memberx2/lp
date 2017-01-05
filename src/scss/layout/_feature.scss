@@ -1,5 +1,6 @@
 .feature {
     color: #3b434c;
+    font-family: 'Roboto', sans-serif;
 }
 
 .feature-container {
@@ -11,15 +12,13 @@
 }
 
 .feature-image {
-    height: 100%;
+    width: 40%;
     object-fit: cover;
 }
 
 .feature-text-container {
     width: 60%;
-    margin-left: 105px;
-    margin-top: 134px;
-    margin-right: 415px;
+    margin: 6% 6% 0 6%;
 }
 
 .feature-title {

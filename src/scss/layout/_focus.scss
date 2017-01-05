@@ -1,5 +1,6 @@
 .focus {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .focus-title {
@@ -14,17 +15,48 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    &:after {
+    &:before {
         content: '';
         border-bottom: 1px solid #d5d8da;
         top: 42px;
         left: 65px;
-        width: 90%;
+        width: 89%;
         position: absolute;
     }
 }
 
-.focus-list-item {}
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    margin: 10px auto;
+    position: relative;
+    &:before {
+        content: '';
+        border: solid 3px black;
+        border-radius: 100%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+}
+
+.dot-color {
+    position: relative;
+    margin: 19px auto;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    background: #fc5f45;
+    &:before {
+        position: absolute;
+        content: '';
+        border: solid 3px white;
+        border-radius: 100%;
+        top: 2px;
+        left: 2px;
+    }
+}
 
 .creative-text {
     font-size: 20px;
@@ -34,4 +66,19 @@
     font-size: 16px;
     font-weight: lighter;
     padding-bottom: 152px;
+    width: 25%;
+    margin-left: 37%;
+}
+
+.icons-lightbulb {
+    font-size: 38px;
+    color: #fff;
+}
+
+.focus-icon {
+    height: 69px;
+    width: 69px;
+    background-color: #fc5f45;
+    padding-top: 8px;
+    margin-top: -50px;
 }

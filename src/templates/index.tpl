@@ -12,17 +12,17 @@
     {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/footer.tpl" as l_footer %} {{l_header.render()}}
     <div class="pros">
         <ul class="pros-list">
-            <li class="pros-list-item">
-                <span class="pros-icon"></span>
-                <p class="pros-text">FIXED PRICE PROJECTS</p>
+            <li class="pros-list-item right-line">
+                <div class="pros-icon"></div>
+                <span class="pros-text">FIXED PRICE PROJECTS</span>
+            </li>
+            <li class="pros-list-item right-line">
+                <div class="pros-icon"></div>
+                <span class="pros-text">RECIEVE ON TIME</span>
             </li>
             <li class="pros-list-item">
-                <span class="pros-icon"></span>
-                <p class="pros-text">RECIEVE ON TIME</p>
-            </li>
-            <li class="pros-list-item">
-                <span class="pros-icon"></span>
-                <p class="pros-text">SATISFACTION GURANTEED</p>
+                <div class="pros-icon"></div>
+                <span class="pros-text">SATISFACTION GURANTEED</span>
             </li>
         </ul>
     </div>
@@ -30,35 +30,40 @@
         <div class="feature-container">
             <img class="feature-image" src="./src/img/left-image.png" alt="" />
             <div class="feature-text-container">
-                <h1 class="feature-title">Developing in the heart od Europe</h1>
+                <h2 class="feature-title">Developing in the heart od Europe</h2>
                 <p class="feature-description">Having worked for clients worldwide, from New York to Singapore, we’re seeking new challenges. Because it’s
                     time to redefine IT outsourcing and make it fit into one sentence right next to the word “enjoyable”.</p>
-                <button class="button feature-button">Learn More</button>
+                <form class="feature-button-form">
+                    <button class="button feature-button">Learn More</button>
+                </form>
             </div>
         </div>
     </section>
     <section class="services">
         <div class="inner">
-            <h1 class="services-title">Services</h1>
+            <h2 class="services-title">Services</h2>
             <p class="services-subtitle">We understand your requirement and provide quality works.</p>
             <ul class="services-list">
                 <li class="services-list-item">
-                    <span class="service-image web"></span>
+                    <div class="service-image web icon-basic-postcard-multiple"></div>
                     <h2 class="service-title">Web Design</h2>
                     <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                 </li>
                 <li class="services-list-item">
-                    <span class="service-image ux"></span>
+                    <div class="service-image ux icon-basic-map"></div>
                     <h2 class="service-title">UX Design</h2>
                     <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                 </li>
                 <li class="services-list-item">
-                    <span class="service-image photography"></span>
+                    <div class="service-image photography icon-basic-picture-multiple"></div>
                     <h2 class="service-title">Photohgraphy</h2>
                     <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                 </li>
                 <li class="services-list-item">
-                    <span class="service-image app"></span>
+                    <div class="service-image">
+                        <span class="icon-basic-tablet"></span>
+                        <span class="icon-basic-smartphone"></span>
+                    </div>
                     <h2 class="service-title">App Development</h2>
                     <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                 </li>
@@ -68,17 +73,20 @@
     </section>
     <section class="focus">
         <div class="inner">
-            <h1 class="focus-title">Our Focus</h1>
+            <h2 class="focus-title">Our Focus</h2>
             <div class="focus-content">
                 <ul class="focus-list">
                     <li class="focus-list-item">
                         <p class="creative-text">we're creative</p>
+                        <div class="dot"></div>
                     </li>
                     <li class="focus-list-item">
-                        <span class="focus-icon"></span>
+                        <div class="focus-icon icons-lightbulb"></div>
+                        <div class="dot-color"></div>
                     </li>
                     <li class="focus-list-item">
                         <p class="creative-text">we're creative</p>
+                        <div class="dot"></div>
                     </li>
                 </ul>
                 <p class="creative-text">we're creative</p>
@@ -89,54 +97,56 @@
     <section class="solutions">
         <div class="solutions-container">
             <div class="solutions-text-container">
-                <h1 class="solutions-title">Technical Solutions Exclusively for Agencies</h1>
+                <h2 class="solutions-title">Technical Solutions Exclusively for Agencies</h2>
                 <p class="solutions-description">Focus on core of your bussines: getting new clients, building portfolio, polishing the designs - let us care
                     about technology.</p>
                 <p class="solutions-description">Not every project should be done by your core team. You don't need to resign from projects because of lack
                     of work force anymore.</p>
-                <button class="button solutions-button">Learn More</button>
+                <form class="solutions-button-form">
+                    <button class="button solutions-button">Learn More</button>
+                </form>
             </div>
             <img class="solutions-image" src="./src/img/right-image.png" alt="" />
         </div>
     </section>
     <section class="team">
         <div class="inner">
-            <h1 class="team-title">Our Team Member</h1>
+            <h2 class="team-title">Our Team Member</h2>
             <p class="team-subtitle">We understand your requirement and provide quality works.</p>
             <ul class="team-list">
                 <li class="team-member">
-                    <img class="member-image"></img>
+                    <img class="member-image" src="" alt="" />
                     <span class="member-name">DAVID SMITH</span>
                     <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                     <div class="socials">
                         <ul class="socials-list">
-                            <li class="socials-item web"></li>
-                            <li class="socials-item twitter"></li>
-                            <li class="socials-item mail"></li>
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
                         </ul>
                     </div>
                 </li>
                 <li class="team-member">
-                    <img class="member-image"></img>
+                    <img class="member-image" src="" alt="" />
                     <span class="member-name">POPEY KHAJI</span>
                     <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                     <div class="socials">
                         <ul class="socials-list">
-                            <li class="socials-item web"></li>
-                            <li class="socials-item twitter"></li>
-                            <li class="socials-item mail"></li>
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
                         </ul>
                     </div>
                 </li>
                 <li class="team-member">
-                    <img class="member-image"></img>
+                    <img class="member-image" src="" alt="" />
                     <span class="member-name">RAHABI KHAN</span>
                     <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
                     <div class="socials">
                         <ul class="socials-list">
-                            <li class="socials-item web"></li>
-                            <li class="socials-item twitter"></li>
-                            <li class="socials-item mail"></li>
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
                         </ul>
                     </div>
                 </li>
@@ -167,11 +177,11 @@
     </section>
     <section class="keep-in-touch">
         <div class="kit-container">
-            <h1 class="kit-title">Keep in Touch</h1>
+            <h2 class="kit-title">Keep in Touch</h2>
             <form class="kit-form">
-                <input class="name input" type="text" placeholder="Name">
-                <input class="email input" type="text" placeholder="E-mail">
-                <input class="message input" type="text" placeholder="Message">
+                <input class="name input" type="text" placeholder="Name" required>
+                <input type="email" class="email input" type="text" placeholder="E-mail" required>
+                <input class="message input" type="text" placeholder="Message" required>
                 <button class="button kit-button">Send Message</button>
             </form>
         </div>

@@ -2,21 +2,55 @@
     width: 900px;
     height: 140px;
     border-radius: 5px;
-    margin: 0 auto;
+    margin: -66px auto;
     background-color: #fff;
-    box-shadow: 0 0 20px #e1e1de;
+    box-shadow: 0px 2px 20px black;
+    font-family: 'Roboto', sans-serif;
 }
 
 .pros-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .pros-list-item {
-
+    margin-top: 25px;
+    padding-top: 10px;
+    position: relative;
+    width: 300px;
 }
 
-.pros-icon {}
+.right-line {
+    &:after {
+        content: '';
+        border-right: 1px solid #e5e5e5;
+        position: absolute;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+    }
+}
 
-.pros-text {}
+.pros-icon {
+    margin: 0 auto 18px;
+    border: 1px solid #fc5f45;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+
+.pros-text {
+    font-size: 14px;
+}
+
+.icons-dollar {
+    padding-top: 8px;
+    color: #fc5f45;
+}
+
+.icon-basic-clock {
+    padding-top: 8px;
+    color: #fc5f45;
+}
