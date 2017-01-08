@@ -13,15 +13,15 @@
     <div class="pros">
         <ul class="pros-list">
             <li class="pros-list-item right-line">
-                <div class="pros-icon"></div>
+                <img class="pros-icon" src="./static/img/dollar-icon.png" alt=""/>
                 <span class="pros-text">FIXED PRICE PROJECTS</span>
             </li>
             <li class="pros-list-item right-line">
-                <div class="pros-icon"></div>
+                <img class="pros-icon" src="./static/img/clock-icon.png" alt=""/>
                 <span class="pros-text">RECIEVE ON TIME</span>
             </li>
             <li class="pros-list-item">
-                <div class="pros-icon"></div>
+                <img class="pros-icon" src="./static/img/done-icon.png" alt=""/>
                 <span class="pros-text">SATISFACTION GURANTEED</span>
             </li>
         </ul>
@@ -113,7 +113,43 @@
         <div class="inner">
             <h2 class="team-title">Our Team Member</h2>
             <p class="team-subtitle">We understand your requirement and provide quality works.</p>
-            <ul class="team-list">
+            <ul class="team-list slider">
+                <li class="team-member">
+                    <img class="member-image" src="" alt="" />
+                    <span class="member-name">DAVID SMITH</span>
+                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
+                    <div class="socials">
+                        <ul class="socials-list">
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="team-member">
+                    <img class="member-image" src="" alt="" />
+                    <span class="member-name">POPEY KHAJI</span>
+                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
+                    <div class="socials">
+                        <ul class="socials-list">
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="team-member">
+                    <img class="member-image" src="" alt="" />
+                    <span class="member-name">RAHABI KHAN</span>
+                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
+                    <div class="socials">
+                        <ul class="socials-list">
+                            <li class="socials-item ico-dribbble"></li>
+                            <li class="socials-item ico-twitter"></li>
+                            <li class="socials-item ico-mail"></li>
+                        </ul>
+                    </div>
+                </li>
                 <li class="team-member">
                     <img class="member-image" src="" alt="" />
                     <span class="member-name">DAVID SMITH</span>
@@ -187,6 +223,8 @@
         </div>
     </section>
     {{l_footer.render()}}
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="./static/js/slick.min.js"></script>
     <script src="./static/js/app.js"></script>
 </body>
 
