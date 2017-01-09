@@ -2,6 +2,7 @@
     text-align: center;
     padding-bottom: 152px;
     font-family: 'Roboto', sans-serif;
+    color: $color-primary;
 }
 
 .team-title {
@@ -24,18 +25,18 @@
 }
 
 .team-member {
-    border: 3px solid #f2f2f2;
+    border: 3px solid $color-team-bg;
     flex-basis: 341px;
     &:hover {
         border: 0;
-        box-shadow: 0 0 14px 0px #f2f2f2;
+        box-shadow: 0 0 14px 0px $color-team-bg;
     }
 }
 
 .member-image {
     height: 157px;
     width: 157px;
-    background-color: #f2f2f2;
+    background-color: $color-team-bg;
     border-radius: 100%;
     margin: 38px 80px;
     overflow: hidden;
@@ -66,15 +67,15 @@
 }
 
 .socials-item {
-    border: 1px solid #b5b5b5;
+    border: 1px solid $color-border-team;
     border-radius: 100%;
     height: 40px;
     width: 40px;
     padding-top: 8px;
     color: #626262;
     &:hover {
-        background-color: #e9654c;
-        border: 1px solid #e9654c;
+        background-color: $color-socials;
+        border: 1px solid $color-socials;
     }
 }
 
@@ -82,6 +83,6 @@
 .ico-mail,
 .ico-dribbble {
     &:hover {
-        color: #fff;
+        color: $color-white;
     }
 }

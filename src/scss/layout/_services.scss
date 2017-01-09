@@ -1,7 +1,7 @@
 .services {
-    background-color: #f7f7f7;
+    background-color: $color-bg-services;
     text-align: center;
-    color: #3b434c;
+    color: $color-primary;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -28,13 +28,14 @@
 }
 
 .services-list-item {
-    background-color: #fff;
+    background-color: $color_white;
     flex-basis: 263px;
     height: 350px;
     &:hover {
-        border-bottom: 3px solid #e9654c;
+        color: $color_black;
+        border-bottom: 3px solid $color-socials;
         .service-image {
-            color: #e9654c;
+            color: $color-socials;
         }
     }
 }
