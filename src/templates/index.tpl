@@ -1,20 +1,35 @@
 <!doctype html>
 <html lang="en" class="no-js">
-
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> {% include "head/head-links.tpl" %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    {% include "head/head-links.tpl" %}
 </head>
 
 <body>
-    {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/footer.tpl" as l_footer %} {{l_header.render()}}
+    {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/footer.tpl" as l_footer %} 
+    {{l_header.render()}}
+    <section class="hero">
+        <div class="inner">
+            <p class="header-subtitle">We are helping agencies</p>
+            <h1 class="header-title">House of front-end development</h1>
+            <p class="header-description">Agencies — design, digital, advertising, we are your front-end development partner.</p>
+            <form class="header-button-form">
+                <button class="button header-button">Learn More</button>
+            </form>
+        </div>
+    </section>
     <div class="pros">
         <ul class="pros-list">
             <li class="pros-list-item right-line">
-                <img class="pros-icon" src="./static/img/dollar-icon.png" alt=""/>
-                <span class="pros-text">FIXED PRICE PROJECTS</span>
+                <figure>
+                    <img class="pros-icon" src="./static/img/dollar-icon.png" alt=""/>
+                    <figcaption>
+                        <span class="pros-text">FIXED PRICE PROJECTS</span>
+                    </figcaption>
+                </figure>
             </li>
             <li class="pros-list-item right-line">
                 <img class="pros-icon" src="./static/img/clock-icon.png" alt=""/>
@@ -26,7 +41,7 @@
             </li>
         </ul>
     </div>
-    <section class="feature">
+    <section class="feature"><!-- banner -->
         <div class="feature-container">
             <img class="feature-image" src="./src/img/left-image.png" alt="" />
             <div class="feature-text-container">
@@ -193,8 +208,10 @@
         <div class="inner">
             <ul class="statistics-list">
                 <li class="statistics-list-item line">
-                    <h2 class="numbers">12,458+</h2>
-                    <p class="statistics-name">Projects Completed</p>
+                    <dl class="zz">
+                        <dt class="xx">12,458+</dt>
+                        <dd class="yy">Projects Completed</dd>
+                    </dl>
                 </li>
                 <li class="statistics-list-item line">
                     <h2 class="numbers">1,796+</h2>
@@ -215,16 +232,26 @@
         <div class="kit-container">
             <h2 class="kit-title">Keep in Touch</h2>
             <form class="kit-form">
-                <input class="name input" type="text" placeholder="Name" required>
-                <input type="email" class="email input" type="text" placeholder="E-mail" required>
-                <input class="message input" type="text" placeholder="Message" required>
-                <button class="button kit-button">Send Message</button>
+                <fieldset>
+                    <div class="fields">
+                        <div class="field">
+                            <input class="name input" type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" class="email input" type="text" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <input class="message input" type="text" placeholder="Message" required>
+                    </div>
+                    <div class="actions">
+                        <button class="button kit-button">Send Message</button>
+                    </div>
+                </fieldset>
             </form>
         </div>
     </section>
     {{l_footer.render()}}
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="./static/js/slick.min.js"></script>
     <script src="./static/js/app.js"></script>
 </body>
 
