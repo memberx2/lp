@@ -9,8 +9,12 @@
 </head>
 
 <body>
-    {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/services.tpl" as l_services %} {% import
-    "partials/layouts/team.tpl" as l_team %} {% import "partials/layouts/footer.tpl" as l_footer %} {{l_header.render()}}
+    {% import "partials/layouts/header.tpl" as l_header %} 
+    {% import "partials/layouts/services.tpl" as l_services %} 
+    {% import "partials/layouts/team.tpl" as l_team %} 
+    {% import "partials/layouts/form.tpl" as l_form %} 
+    {% import "partials/layouts/footer.tpl" as l_footer %} 
+    {{l_header.render()}}
     <section class="hero">
         <div class="inner">
             <p class="hero-subtitle">We are helping agencies</p>
@@ -101,7 +105,9 @@
                     of work force anymore.</p>
                 <button class="button solutions-button">Learn More</button>
             </div>
-            <img class="solutions-image" src="./src/img/right-image.png" alt="" />
+            <figure>
+                <img class="solutions-image" src="./src/img/right-image.png" alt="" />
+            </figure>
         </div>
     </section>
     <section class="team">
@@ -115,22 +121,28 @@
         <div class="inner">
             <ul class="statistics-list">
                 <li class="statistics-list-item line">
-                    <dl class="zz">
+                    <dl class="dl">
                         <dt class="xx">12,458+</dt>
                         <dd class="yy">Projects Completed</dd>
                     </dl>
                 </li>
                 <li class="statistics-list-item line">
-                    <h2 class="numbers">1,796+</h2>
-                    <p class="statistics-name">Satisfied Clients</p>
+                    <dl class="dl">
+                        <dt class="numbers">1,796+</dt>
+                        <dd class="statistics-name">Satisfied Clients</dd>
+                    </dl>
                 </li>
                 <li class="statistics-list-item line">
-                    <h2 class="numbers">1,000+</h2>
-                    <p class="statistics-name">Positive Feedbacks</p>
+                    <dl class="dl">
+                        <dt class="numbers">1,000+</dt>
+                        <dd class="statistics-name">Positive Feedbacks</dd>
+                    </dl>
                 </li>
                 <li class="statistics-list-item">
-                    <h2 class="numbers">1,500+</h2>
-                    <p class="statistics-name">Freebies Released</p>
+                    <dl class="dl">
+                        <dt class="numbers">1,500+</dt>
+                        <dd class="statistics-name">Freebies Released</dd>
+                    </dl>
                 </li>
             </ul>
         </div>
@@ -138,24 +150,7 @@
     <section class="keep-in-touch">
         <div class="kit-container">
             <h2 class="kit-title">Keep in Touch</h2>
-            <form class="kit-form">
-                <fieldset>
-                    <div class="fields">
-                        <div class="field">
-                            <input class="name input" type="text" placeholder="Name" required>
-                        </div>
-                        <div class="field">
-                            <input type="email" class="email input" type="text" placeholder="E-mail" required>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <input class="message input" type="text" placeholder="Message" required>
-                    </div>
-                    <div class="actions">
-                        <button class="button kit-button">Send Message</button>
-                    </div>
-                </fieldset>
-            </form>
+            {{l_form.render()}}
         </div>
     </section>
     {{l_footer.render()}}

@@ -1,11 +1,11 @@
 /* ==========================================================================
    Forms
    ========================================================================== */
+
 .f-form {
     fieldset {
         margin: 0;
         padding: 0;
-
         border: 0;
     }
     input,
@@ -21,7 +21,6 @@
         min-height: $size_btn*5;
         max-height: $size_btn*10;
         padding: $size_gutter;
-
         resize: vertical;
     }
     input:-webkit-autofill,
@@ -36,7 +35,6 @@
     .f-select-wrapper,
     .f-textarea-wrapper {
         position: relative;
-
         cursor: pointer;
     }
     .f-input-wrapper,
@@ -61,7 +59,6 @@
         input,
         textarea {
             width: 100%;
-
             border: none;
             background: transparent;
         }
@@ -80,25 +77,97 @@
     }
     .f-select-wrapper {
         position: relative;
-
         overflow: hidden;
         select {
             position: relative;
             z-index: 3;
-
             width: 100%;
             height: $size_btn;
             // padding: 0 calc(#{$size_btn} + #{$size_gutter} - 8px) 0 $size_gutter;
-
             border: none;
             border-radius: 0;
             background: transparent;
-
             -webkit-appearance: none;
-               -moz-appearance: none;
+            -moz-appearance: none;
         }
         select::-ms-expand {
             display: none;
         }
     }
+}
+
+.kit-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid $color-border-kit;
+    background-color: transparent;
+    &:focus {
+        &+.top-label {
+            transform: translate(-4px, -30px) scale(0.8);
+            cursor: default;
+        }
+        &+.bottom-label {
+            transform: translate(-4px, -30px) scale(0.8);
+            cursor: default;
+        }
+    }
+}
+
+.name {
+    width: 261px;
+}
+
+.email {
+    width: 261px;
+}
+
+.message {
+    width: 570px;
+    margin-top: 92px;
+}
+
+.kit-button {
+    margin-top: 72px;
+}
+
+.fieldset {
+    border: 0;
+    width: 100%;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+
+.field {
+    position: relative;
+}
+
+.top-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $color-placeholder;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: text;
+}
+
+.bottom-label {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    color: $color-placeholder;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: text;
 }
