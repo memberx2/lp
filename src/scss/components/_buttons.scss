@@ -10,4 +10,7 @@
     height: 50px;
     width: 180px;
     cursor: pointer;
+    &:hover {
+        background-color: $color-secondary;
+    }
 }

@@ -1,6 +1,6 @@
 .focus {
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-serif;
     color: $color-primary;
 }
 
@@ -45,7 +45,7 @@
 
 .dot-color {
     position: relative;
-    margin: 19px auto;
+    margin: 37px auto;
     z-index: 1;
     width: 10px;
     height: 10px;
@@ -62,15 +62,15 @@
 
 .creative-text {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .focus-text {
     font-size: 16px;
     font-weight: lighter;
     padding-bottom: 152px;
-
-        margin: 10px 0 0 37%;
-    width: 27%;
+    margin: 10px 0 0 23%;
+    width: 55%;
 }
 
 .icons-lightbulb {
@@ -84,4 +84,7 @@
     background-color: $color-secondary;
     padding-top: 8px;
     margin-top: -50px;
+    position: absolute;
+    top: -7px;
+    left: 532px;
 }

@@ -1,7 +1,7 @@
 .team {
     text-align: center;
     padding-bottom: 152px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-serif;
     color: $color-primary;
 }
 
@@ -44,6 +44,7 @@
 
 .member-name {
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 .member-description {
@@ -67,6 +68,24 @@
 }
 
 .socials-item {
+    border: 1px solid $color-border-team;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    padding-top: 8px;
+    color: #626262;
+    &:hover {
+        background-color: $color-socials;
+        border: 1px solid $color-socials;
+    }
+}
+
+.alt-text {
+    display: block;
+    text-indent: -9998em;
+}
+
+.socials-item-a {
     border: 1px solid $color-border-team;
     border-radius: 100%;
     height: 40px;

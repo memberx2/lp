@@ -1,56 +1,63 @@
 <!doctype html>
 <html lang="en" class="no-js">
+
 <head>
     <meta charset="utf-8">
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    {% include "head/head-links.tpl" %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> {% include "head/head-links.tpl" %}
 </head>
 
 <body>
-    {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/footer.tpl" as l_footer %} 
-    {{l_header.render()}}
+    {% import "partials/layouts/header.tpl" as l_header %} {% import "partials/layouts/services.tpl" as l_services %} {% import
+    "partials/layouts/team.tpl" as l_team %} {% import "partials/layouts/footer.tpl" as l_footer %} {{l_header.render()}}
     <section class="hero">
         <div class="inner">
-            <p class="header-subtitle">We are helping agencies</p>
-            <h1 class="header-title">House of front-end development</h1>
-            <p class="header-description">Agencies — design, digital, advertising, we are your front-end development partner.</p>
-            <form class="header-button-form">
-                <button class="button header-button">Learn More</button>
-            </form>
+            <p class="hero-subtitle">We are helping agencies</p>
+            <h1 class="hero-title">House of front-end development</h1>
+            <p class="hero-description">Agencies — design, digital, advertising, we are your front-end development partner.</p>
+            <button class="button hero-button">Learn More</button>
         </div>
     </section>
     <div class="pros">
         <ul class="pros-list">
             <li class="pros-list-item right-line">
                 <figure>
-                    <img class="pros-icon" src="./static/img/dollar-icon.png" alt=""/>
+                    <img class="pros-icon" src="./static/img/dollar-icon.png" alt="" />
                     <figcaption>
-                        <span class="pros-text">FIXED PRICE PROJECTS</span>
+                        <span class="pros-text">Fixed price projects</span>
                     </figcaption>
                 </figure>
             </li>
             <li class="pros-list-item right-line">
-                <img class="pros-icon" src="./static/img/clock-icon.png" alt=""/>
-                <span class="pros-text">RECIEVE ON TIME</span>
+                <figure>
+                    <img class="pros-icon" src="./static/img/clock-icon.png" alt="" />
+                    <figcaption>
+                        <span class="pros-text">Recieve on time</span>
+                    </figcaption>
+                </figure>
             </li>
             <li class="pros-list-item">
-                <img class="pros-icon" src="./static/img/done-icon.png" alt=""/>
-                <span class="pros-text">SATISFACTION GURANTEED</span>
+                <figure>
+                    <img class="pros-icon" src="./static/img/done-icon.png" alt="" />
+                    <figcaption>
+                        <span class="pros-text">Satisfaction guranteed</span>
+                    </figcaption>
+                </figure>
             </li>
         </ul>
     </div>
-    <section class="feature"><!-- banner -->
+    <section class="feature">
+        <!-- banner -->
         <div class="feature-container">
-            <img class="feature-image" src="./src/img/left-image.png" alt="" />
+            <figure>
+                <img class="feature-image" src="./src/img/left-image.png" alt="" />
+            </figure>
             <div class="feature-text-container">
                 <h2 class="feature-title">Developing in the heart od Europe</h2>
                 <p class="feature-description">Having worked for clients worldwide, from New York to Singapore, we’re seeking new challenges. Because it’s
                     time to redefine IT outsourcing and make it fit into one sentence right next to the word “enjoyable”.</p>
-                <form class="feature-button-form">
-                    <button class="button feature-button">Learn More</button>
-                </form>
+                <button class="button feature-button">Learn More</button>
             </div>
         </div>
     </section>
@@ -58,33 +65,8 @@
         <div class="inner">
             <h2 class="services-title">Services</h2>
             <p class="services-subtitle">We understand your requirement and provide quality works.</p>
-            <ul class="services-list">
-                <li class="services-list-item">
-                    <div class="service-image web icon-basic-postcard-multiple"></div>
-                    <h2 class="service-title">Web Design</h2>
-                    <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                </li>
-                <li class="services-list-item">
-                    <div class="service-image ux icon-basic-map"></div>
-                    <h2 class="service-title">UX Design</h2>
-                    <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                </li>
-                <li class="services-list-item">
-                    <div class="service-image photography icon-basic-picture-multiple"></div>
-                    <h2 class="service-title">Photohgraphy</h2>
-                    <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                </li>
-                <li class="services-list-item">
-                    <div class="service-image">
-                        <span class="icon-basic-tablet"></span>
-                        <span class="icon-basic-smartphone"></span>
-                    </div>
-                    <h2 class="service-title">App Development</h2>
-                    <p class="service-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                </li>
-            </ul>
+            {{l_services.render()}}
         </div>
-        <div class="clearfix"></div>
     </section>
     <section class="focus">
         <div class="inner">
@@ -98,14 +80,14 @@
                     <li class="focus-list-item">
                         <div class="focus-icon icons-lightbulb"></div>
                         <div class="dot-color"></div>
+                        <p class="creative-text creative-text-list">we're creative</p>
+                        <p class="focus-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
                     </li>
                     <li class="focus-list-item">
                         <p class="creative-text">we're creative</p>
                         <div class="dot"></div>
                     </li>
                 </ul>
-                <p class="creative-text">we're creative</p>
-                <p class="focus-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
             </div>
         </div>
     </section>
@@ -117,9 +99,7 @@
                     about technology.</p>
                 <p class="solutions-description">Not every project should be done by your core team. You don't need to resign from projects because of lack
                     of work force anymore.</p>
-                <form class="solutions-button-form">
-                    <button class="button solutions-button">Learn More</button>
-                </form>
+                <button class="button solutions-button">Learn More</button>
             </div>
             <img class="solutions-image" src="./src/img/right-image.png" alt="" />
         </div>
@@ -128,80 +108,7 @@
         <div class="inner">
             <h2 class="team-title">Our Team Member</h2>
             <p class="team-subtitle">We understand your requirement and provide quality works.</p>
-            <ul class="team-list slider">
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">DAVID SMITH</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">POPEY KHAJI</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">RAHABI KHAN</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">DAVID SMITH</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">POPEY KHAJI</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="team-member">
-                    <img class="member-image" src="" alt="" />
-                    <span class="member-name">RAHABI KHAN</span>
-                    <p class="member-description">Analytics release series A financing launch party interaction design android angel investor.</p>
-                    <div class="socials">
-                        <ul class="socials-list">
-                            <li class="socials-item ico-dribbble"></li>
-                            <li class="socials-item ico-twitter"></li>
-                            <li class="socials-item ico-mail"></li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+            {{l_team.render()}}
         </div>
     </section>
     <section class="statistics">

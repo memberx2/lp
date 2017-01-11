@@ -9,7 +9,8 @@ const SlickSlider = {
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 2700,
-      arrows: false
+      arrows: false,
+      dots: true
     })
   }
 }
