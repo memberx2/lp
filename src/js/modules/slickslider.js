@@ -10,7 +10,18 @@ const SlickSlider = {
       //autoplay: true,
       //autoplaySpeed: 2700,
       arrows: false,
-      dots: true
+      dots: true,
+      responsive: [
+    {
+      breakpoint: 769,
+      settings: {
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+  ]
     })
   }
 }

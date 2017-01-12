@@ -7,11 +7,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @include media (">=phone", "<tablet") {
+        flex-direction: column;
+    }
 }
 
 .solutions-text-container {
     width: 57%;
     margin: 0 6% 0 6%;
+    @include media (">=phone", "<tablet") {
+        width: 87%;
+        margin-bottom: 30px;
+    }
 }
 
 .solutions-title {

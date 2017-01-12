@@ -60,7 +60,8 @@
     "standard": "^8.6.0",
     "webpack": "1.12.14",
     "webpack-dev-middleware": "1.5.1",
-    "webpack-hot-middleware": "2.10.0"
+    "webpack-hot-middleware": "2.10.0",
+    "include-media": "^1.4.9"
   },
   "pre-commit": [
     "lint",

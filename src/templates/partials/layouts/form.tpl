@@ -4,11 +4,11 @@
         <div class="fields">
             <div class="field">
                 <input class="name input" type="text" id="name" required>
-                <label  class="top-label" for="name">Name</label>
+                <label  class="top-label name-label" for="name">Name</label>
             </div>
             <div class="field">
                 <input type="email" class="email input" type="text" id="email" required>
-                <label  class="top-label" for="email">E-mail</label>
+                <label  class="top-label email-label" for="email">E-mail</label>
             </div>
         </div>
         <div class="field">

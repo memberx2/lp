@@ -9,6 +9,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 154px;
+    @include media (">=phone", "<tablet") {
+        flex-direction: column;
+        margin-top: 129px;
+        padding-bottom: 75px;
+    }
 }
 
 .feature-image {
@@ -19,6 +24,9 @@
 .feature-text-container {
     width: 60%;
     margin: 6% 6% 0 6%;
+    @include media (">=phone", "<tablet") {
+        width: 82%;
+    }
 }
 
 .feature-title {

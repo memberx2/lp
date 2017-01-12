@@ -10,6 +10,9 @@
     margin: 0 auto;
     padding: 130px 0 160px;
     text-align: center;
+    @include media (">=phone", "<tablet") {
+        width: 375px;
+    }
 }
 
 .kit-title {

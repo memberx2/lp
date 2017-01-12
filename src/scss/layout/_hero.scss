@@ -1,22 +1,39 @@
 .hero {
     background-color: $color-bg-header;
-   font-family: $font-serif;
-   color: $color_white;
+    font-family: $font-serif;
+    color: $color_white;
+    @include media (">=tablet", "<desktop") {
+        padding: 0 39px;
+    }
+    @include media (">=phone", "<tablet") {
+        padding: 0 39px;
+    }
 }
 
 .hero-subtitle {
     font-size: 30px;
     padding-top: 229px;
+    @include media (">=phone", "<tablet") {
+        font-size: 25px;
+        padding-top: 188px;
+    }
 }
 
-.hero-title{
+.hero-title {
     font-size: 55px;
     padding: 0;
+    @include media (">=phone", "<tablet") {
+        font-size: 35px;
+        padding: 13px 0;
+    }
 }
 
 .hero-description {
     font-size: 24px;
     padding-bottom: 42px;
+    @include media (">=phone", "<tablet") {
+        font-size: 19px;
+    }
 }
 
 .hero-button {

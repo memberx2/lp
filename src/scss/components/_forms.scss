@@ -111,29 +111,55 @@
         &+.top-label {
             transform: translate(-4px, -30px) scale(0.8);
             cursor: default;
+            @include media (">=phone", "<tablet") {
+                transform: translate(-6px, -20px) scale(0.8);
+            }
         }
         &+.bottom-label {
             transform: translate(-4px, -30px) scale(0.8);
             cursor: default;
+            @include media (">=phone", "<tablet") {
+                transform: translate(-6px, -20px) scale(0.8);
+            }
         }
     }
 }
 
 .name {
     width: 261px;
+    @include media (">=phone", "<tablet") {
+        width: 346px;
+        position: absolute;
+        left: 0px;
+    }
 }
 
 .email {
     width: 261px;
+    @include media (">=phone", "<tablet") {
+        width: 346px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
 }
 
 .message {
     width: 570px;
     margin-top: 92px;
+    @include media (">=phone", "<tablet") {
+        width: 346px;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+    }
 }
 
 .kit-button {
     margin-top: 72px;
+    @include media (">=phone", "<tablet") {
+        margin-top: 164px;
+    }
 }
 
 .fieldset {
@@ -146,6 +172,9 @@
     justify-content: space-between;
     flex-direction: row;
     position: relative;
+    @include media (">=phone", "<tablet") {
+        flex-direction: column;
+    }
 }
 
 .field {
@@ -162,6 +191,10 @@
     cursor: text;
 }
 
+.email-label {
+    top: 50px;
+}
+
 .bottom-label {
     position: absolute;
     top: 90px;
@@ -170,4 +203,7 @@
     font-size: 16px;
     transition: 0.5s;
     cursor: text;
+    @include media (">=phone", "<tablet") {
+        top: 98px;
+    }
 }

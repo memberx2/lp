@@ -1,7 +1,13 @@
 .header {
-   background-color: $color-bg-header;
-   font-family: $font-serif;
-   color: $color_white;
+    background-color: $color-bg-header;
+    font-family: $font-serif;
+    color: $color_white;
+    @include media (">=tablet", "<desktop") {
+        padding: 0 39px;
+    }
+    @include media (">=phone", "<tablet") {
+        padding: 0 39px;
+    }
 }
 
 .header-logo {
