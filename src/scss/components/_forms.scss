@@ -193,6 +193,9 @@
 
 .email-label {
     top: 0px;
+    @include media (">=phone", "<tablet") {
+        top: 50px;
+    }
 }
 
 .bottom-label {
