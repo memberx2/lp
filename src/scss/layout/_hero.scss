@@ -4,10 +4,10 @@
     color: $color_white;
     padding-bottom: 282px;
     @include media (">=tablet", "<desktop") {
-        padding: 0 39px;
+        padding-left: 39px;
     }
     @include media (">=phone", "<tablet") {
-        padding: 0 39px;
+        padding-left: 39px;
     }
 }
 
