@@ -16,23 +16,6 @@
     }
 }
 
-.pros-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    @include media (">=phone", "<tablet") {
-        flex-direction: column;
-    }
-}
-
-.pros-list-item {
-    margin-top: 25px;
-    padding-top: 61px;
-    position: relative;
-    width: 300px;
-}
-
 .right-line {
     &:after {
         content: '';
@@ -52,28 +35,8 @@
     }
 }
 
-.pros-icon {
-    position: absolute;
-    top: 7px;
-    left: 132px;
-    height: 40px;
-    width: 40px;
-    @include media (">=tablet", "<desktop") {
-        left: 109px;
-    }
-}
-
 .pros-text {
     font-size: 14px;
     text-transform: uppercase;
 }
 
-.icons-dollar {
-    padding-top: 8px;
-    color: $color_orange;
-}
-
-.icon-basic-clock {
-    padding-top: 8px;
-    color: $color_orange;
-}

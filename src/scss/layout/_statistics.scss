@@ -8,27 +8,6 @@
         }
 }
 
-.statistics-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    text-align: center;
-    color: $color_white;
-    align-items: center;
-    @include media (">=phone", "<tablet") {
-        flex-direction: column;
-        padding-top: 48px;
-    }
-}
-
-.statistics-list-item {
-    flex-basis: 284px;
-    height: 180px;
-    padding-top: 42px;
-    position: relative;
-}
-
 .line {
     &:after {
         content: '';

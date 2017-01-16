@@ -1,0 +1,38 @@
+.dot {
+    width: 10px;
+    height: 10px;
+    background: $color_lightergray2;
+    margin: 10px auto;
+    position: relative;
+    &:before {
+        content: '';
+        border: solid 3px $color_black;
+        border-radius: 100%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+    }
+}
+
+.dot-color {
+    position: relative;
+    margin: 37px auto;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    background: $color_orange;
+    @include media (">=363px", "<tablet") {
+        margin: 39px auto;
+    }
+    @include media (">=phone", "<363px") {
+        margin: 65px auto;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        border: solid 3px $color_white;
+        border-radius: 100%;
+        top: 2px;
+        left: 2px;
+    }
+}

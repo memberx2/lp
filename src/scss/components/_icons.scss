@@ -1,0 +1,49 @@
+.icons-lightbulb {
+    font-size: 38px;
+    color: $color_white;
+}
+
+.focus-icon {
+    height: 69px;
+    width: 69px;
+    background-color: $color_orange;
+    padding-top: 8px;
+    margin-top: -50px;
+    position: absolute;
+    top: -7px;
+    left: calc(50% - 35px);
+    @include media (">=644px", "<tablet") {
+        top: -6px;
+    }
+}
+
+.pros-icon {
+    position: absolute;
+    top: 7px;
+    left: 132px;
+    height: 40px;
+    width: 40px;
+    @include media (">=tablet", "<desktop") {
+        left: 109px;
+    }
+}
+
+.icons-dollar {
+    padding-top: 8px;
+    color: $color_orange;
+}
+
+.icon-basic-clock {
+    padding-top: 8px;
+    color: $color_orange;
+}
+
+.ico-twitter,
+.ico-mail,
+.ico-dribbble {
+    color: #626262;
+
+    &:hover {
+        color: $color-white;
+    }
+}
