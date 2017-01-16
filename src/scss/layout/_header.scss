@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-bg-header;
+    background-color: $color_purple;
     font-family: $font-serif;
     color: $color_white;
     @include media (">=tablet", "<desktop") {

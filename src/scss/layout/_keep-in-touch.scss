@@ -2,7 +2,7 @@
     background: url(../img/keep-in-touch-background.png) no-repeat center center;
     background-size: cover;
     font-family: $font-serif;
-    color: $color-primary;
+    color: $color_darkblue;
 }
 
 .kit-container {
@@ -10,8 +10,11 @@
     margin: 0 auto;
     padding: 130px 0 160px;
     text-align: center;
-    @include media (">=phone", "<tablet") {
-        width: 375px;
+    @include media (">344px", "<tablet") {
+        width: 336px;
+    }
+    @include media (">=phone", "<=344px") {
+        width: 300px;
     }
 }
 

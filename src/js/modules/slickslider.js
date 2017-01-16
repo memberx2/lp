@@ -16,6 +16,15 @@ const SlickSlider = {
       breakpoint: 769,
       settings: {
         arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 620,
+      settings: {
+        arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true

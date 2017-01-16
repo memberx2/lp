@@ -18,21 +18,21 @@ $colors:
     $color_3;
 
 $color_default_link:		$color_3;
-$color-primary: #3b434c;
-$color-secondary: #fc5f45;
-$color-socials: #e9654c;
-$color-team-bg: #f2f2f2;
-$color-focus-border: #d5d8da;
-$color-statistics: #6c6c73;
-$color-secondary-bg: #ddd;
-$color-bg-footer: #1b2126;
-$color-text: #7f8081;
-$color-bg-header: #200a32;
-$color-border-kit: #646e76;
-$color-placeholder: #666666;
-$color-border-pros: #e5e5e5;
-$color-bg-services: #f7f7f7;
-$color-border-team: #b5b5b5;
+$color_darkblue: #3b434c;
+$color_orange: #fc5f45;
+$color_lightorange: #e9654c;
+$color_lightergray: #f2f2f2;
+$color_lightblue: #d5d8da;
+$color_lightgray: #6c6c73;
+$color_lightergray2: #ddd;
+$color_darkerblue: #1b2126;
+$color_gray: #7f8081;
+$color_purple: #200a32;
+$color_gray_border: #646e76;
+$color_gray_placeholder: #666666;
+$color_lightergray_border: #e5e5e5;
+$color_whitegray: #f7f7f7;
+$color_whitegray_border: #b5b5b5;
 
 /* Gridle custom classes
 ========================================================================== */
@@ -66,5 +66,6 @@ $font-serif: 'Roboto', sans-serif;
 $breakpoints: (
   'phone': 320px,
   'tablet': 768px,
-  'desktop': 1024px
+  'desktop': 1024px,
+  'smallTablet': 644px
 ) !default;

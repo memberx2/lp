@@ -1,7 +1,8 @@
 .hero {
-    background-color: $color-bg-header;
+    background-color: $color_purple;
     font-family: $font-serif;
     color: $color_white;
+    padding-bottom: 282px;
     @include media (">=tablet", "<desktop") {
         padding: 0 39px;
     }

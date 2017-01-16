@@ -105,7 +105,7 @@
 
 .input {
     border: none;
-    border-bottom: 2px solid $color-border-kit;
+    border-bottom: 2px solid $color_gray_border;
     background-color: transparent;
     &:focus {
         &+.top-label {
@@ -125,10 +125,32 @@
     }
 }
 
+.input:valid {
+    &+.top-label {
+        transform: translate(-4px, -30px) scale(0.8);
+        cursor: default;
+        @include media (">=phone", "<tablet") {
+            transform: translate(-6px, -20px) scale(0.8);
+        }
+    }
+    &+.bottom-label {
+        transform: translate(-4px, -30px) scale(0.8);
+        cursor: default;
+        @include media (">=phone", "<tablet") {
+            transform: translate(-6px, -20px) scale(0.8);
+        }
+    }
+}
+
 .name {
     width: 261px;
-    @include media (">=phone", "<tablet") {
-        width: 346px;
+    @include media (">344px", "<tablet") {
+        width: 319px;
+        position: absolute;
+        left: 0px;
+    }
+    @include media (">=phone", "<=344px") {
+        width: 300px;
         position: absolute;
         left: 0px;
     }
@@ -136,8 +158,14 @@
 
 .email {
     width: 261px;
-    @include media (">=phone", "<tablet") {
-        width: 346px;
+    @include media (">344px", "<tablet") {
+        width: 319px;
+        position: absolute;
+        left: 0px;
+        top: 50px;
+    }
+    @include media (">=phone", "<=344px") {
+        width: 300px;
         position: absolute;
         left: 0px;
         top: 50px;
@@ -147,8 +175,14 @@
 .message {
     width: 570px;
     margin-top: 92px;
-    @include media (">=phone", "<tablet") {
-        width: 346px;
+    @include media (">344px", "<tablet") {
+        width: 319px;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+    }
+    @include media (">=phone", "<=344px") {
+        width: 300px;
         position: absolute;
         left: 0px;
         top: 10px;
@@ -157,6 +191,7 @@
 
 .kit-button {
     margin-top: 72px;
+    padding: 0;
     @include media (">=phone", "<tablet") {
         margin-top: 164px;
     }
@@ -165,6 +200,7 @@
 .fieldset {
     border: 0;
     width: 100%;
+    padding: 0.35em 0.005em 0.75em;
 }
 
 .fields {
@@ -185,7 +221,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    color: $color-placeholder;
+    color: $color_gray_placeholder;
     font-size: 16px;
     transition: 0.5s;
     cursor: text;
@@ -202,7 +238,7 @@
     position: absolute;
     top: 90px;
     left: 0;
-    color: $color-placeholder;
+    color: $color_gray_placeholder;
     font-size: 16px;
     transition: 0.5s;
     cursor: text;

@@ -32,7 +32,7 @@
 .line {
     &:after {
         content: '';
-        border-right: 1px solid $color-statistics;
+        border-right: 1px solid $color_lightgray;
         transform: rotate(30deg);
         position: absolute;
         top: 0px;

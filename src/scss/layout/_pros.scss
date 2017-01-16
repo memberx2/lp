@@ -6,7 +6,7 @@
     background-color: $color_white;
     box-shadow: 0px 2px 16px -1px #ddd;
     font-family: $font-serif;
-    color: $color-primary;
+    color: $color_darkblue;
     @include media (">=tablet", "<desktop") {
         width: 760px;
     }
@@ -36,14 +36,14 @@
 .right-line {
     &:after {
         content: '';
-        border-right: 1px solid $color-border-pros;
+        border-right: 1px solid $color_lightergray_border;
         position: absolute;
         height: 100%;
         top: 0px;
         right: 0px;
         @include media (">=phone", "<tablet") {
             border: 0;
-            border-bottom: 1px solid $color-border-pros;
+            border-bottom: 1px solid $color_lightergray_border;
             position: absolute;
             width: 84%;
             top: 21px;
@@ -70,10 +70,10 @@
 
 .icons-dollar {
     padding-top: 8px;
-    color: $color-secondary;
+    color: $color_orange;
 }
 
 .icon-basic-clock {
     padding-top: 8px;
-    color: $color-secondary;
+    color: $color_orange;
 }

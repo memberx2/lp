@@ -1,7 +1,7 @@
 .services {
-    background-color: $color-bg-services;
+    background-color: $color_whitegray;
     text-align: center;
-    color: $color-primary;
+    color: $color_darkblue;
     font-family: $font-serif;
     padding-bottom: 105px;
 }
@@ -33,13 +33,13 @@
     height: 350px;
     &:hover {
         color: $color_black;
-        border-bottom: 3px solid $color-socials;
+        border-bottom: 3px solid $color_lightorange;
         .service-image {
-            color: $color-socials;
+            color: $color_lightorange;
         }
     }
-    @include media (">=tablet", "<desktop") {
-        flex-basis: 181px;
+    @include media (">=tablet", "<=desktop") {
+        flex-basis: 160px;
     }
     @include media (">=phone", "<tablet") {
         margin: 10px 15px;

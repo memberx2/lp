@@ -1,7 +1,7 @@
 .focus {
     text-align: center;
     font-family: $font-serif;
-    color: $color-primary;
+    color: $color_darkblue;
 }
 
 .focus-title {
@@ -26,23 +26,57 @@
     }
     &:before {
         content: '';
-        border-bottom: 1px solid $color-focus-border;
+        border-bottom: 1px solid $color_lightblue;
         top: 42px;
         left: 65px;
         width: 89%;
         position: absolute;
-        @include media (">=phone", "<tablet") {
-            top: 72px;
-            left: 36px;
-            width: 83%;
+        @include media (">=644px", "<767px") {
+            top: 43px;
+            left: 98px;
+            width: 72%;
+        }
+        @include media (">=phone", "<363px") {
+            top: 71px;
+            left: 67px;
+            width: 66%;
+        }
+        @include media (">=363px", "<462px") {
+            top: 43px;
+            width: 68%;
+        }
+        @include media (">=462px", "<562px") {
+            width: 68%;
+            left: 89px;
+        }
+        @include media (">=562px", "<644px") {
+            width: 68%;
+            left: 89px;
+        }
+        @include media (">=767px", "<773px") {
+            left: 65px;
+            width: 84%;
+        }
+        @include media (">=1012px", "<1085px") {
+            width: 86%;
         }
     }
+}
+
+.focus-list-item {
+    @include media (">=phone", "<tablet") {
+        flex-basis: 200px;
+    }
+}
+
+.middle {
+    position: relative;
 }
 
 .dot {
     width: 10px;
     height: 10px;
-    background: $color-secondary-bg;
+    background: $color_lightergray2;
     margin: 10px auto;
     position: relative;
     &:before {
@@ -61,9 +95,12 @@
     z-index: 1;
     width: 10px;
     height: 10px;
-    background: $color-secondary;
-    @include media (">=phone", "<tablet") {
-        margin: 67px auto;
+    background: $color_orange;
+    @include media (">=363px", "<tablet") {
+        margin: 39px auto;
+    }
+    @include media (">=phone", "<363px") {
+        margin: 65px auto;
     }
     &:before {
         position: absolute;
@@ -87,8 +124,8 @@
     margin: 10px 0 0 23%;
     width: 55%;
     @include media (">=phone", "<tablet") {
-        margin: 10px 0 0;
-        width: 100%;
+        margin: 10px 0 0 -61px;
+        width: 200%;
     }
 }
 
@@ -100,17 +137,13 @@
 .focus-icon {
     height: 69px;
     width: 69px;
-    background-color: $color-secondary;
+    background-color: $color_orange;
     padding-top: 8px;
     margin-top: -50px;
     position: absolute;
     top: -7px;
-    left: 532px;
-    @include media (">=tablet", "<desktop") {
-        left: 348px;
-    }
-    @include media (">=phone", "<tablet") {
+    left: calc(50% - 35px);
+    @include media (">=644px", "<tablet") {
         top: -6px;
-        left: 153px;
     }
 }

@@ -20,7 +20,7 @@
             <p class="hero-subtitle">We are helping agencies</p>
             <h1 class="hero-title">House of front-end development</h1>
             <p class="hero-description">Agencies — design, digital, advertising, we are your front-end development partner.</p>
-            <button class="button hero-button">Learn More</button>
+            <a class="button hero-button link-button" href="#">Learn More</a>
         </div>
     </section>
     <div class="pros">
@@ -61,7 +61,7 @@
                 <h2 class="feature-title">Developing in the heart od Europe</h2>
                 <p class="feature-description">Having worked for clients worldwide, from New York to Singapore, we’re seeking new challenges. Because it’s
                     time to redefine IT outsourcing and make it fit into one sentence right next to the word “enjoyable”.</p>
-                <button class="button feature-button">Learn More</button>
+                <a class="button feature-button link-button" href="#">Learn More</a>
             </div>
         </div>
     </section>
@@ -81,7 +81,7 @@
                         <p class="creative-text">we're creative</p>
                         <div class="dot"></div>
                     </li>
-                    <li class="focus-list-item">
+                    <li class="focus-list-item middle">
                         <div class="focus-icon icons-lightbulb"></div>
                         <div class="dot-color"></div>
                         <p class="creative-text creative-text-list">we're creative</p>
@@ -103,7 +103,7 @@
                     about technology.</p>
                 <p class="solutions-description">Not every project should be done by your core team. You don't need to resign from projects because of lack
                     of work force anymore.</p>
-                <button class="button solutions-button">Learn More</button>
+                <a class="button solutions-button link-button" href="#">Learn More</a>
             </div>
             <figure>
                 <img class="solutions-image" src="./src/img/right-image.png" alt="" />

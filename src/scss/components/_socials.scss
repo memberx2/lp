@@ -12,15 +12,15 @@
 }
 
 .socials-item {
-   /* border: 1px solid $color-border-team;
+   /* border: 1px solid $color_whitegray_border;
     border-radius: 100%;
     height: 40px;
     width: 40px;
     padding-top: 8px;
     color: #626262;
     &:hover {
-        background-color: $color-socials;
-        border: 1px solid $color-socials;
+        background-color: $color_lightorange;
+        border: 1px solid $color_lightorange;
     }*/
 }
 
@@ -30,7 +30,7 @@
 }
 
 .social-item-a {
-    border: 1px solid $color-border-team;
+    border: 1px solid $color_whitegray_border;
     border-radius: 100%;
     height: 40px;
     width: 40px;
@@ -38,8 +38,8 @@
     color: #626262;
     display: block;
     &:hover {
-        background-color: $color-socials;
-        border: 1px solid $color-socials;
+        background-color: $color_lightorange;
+        border: 1px solid $color_lightorange;
     }
 }
 

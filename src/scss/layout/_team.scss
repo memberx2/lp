@@ -2,7 +2,7 @@
     text-align: center;
     padding-bottom: 152px;
     font-family: $font-serif;
-    color: $color-primary;
+    color: $color_darkblue;
 }
 
 .team-title {
@@ -15,6 +15,10 @@
     font-size: 18px;
     font-weight: normal;
     padding-bottom: 56px;
+    @include media (">=phone", "<tablet") {
+        width: 293px;
+        margin: 0 auto;
+    }
 }
 
 .team-list {
@@ -25,25 +29,28 @@
 }
 
 .team-member {
-    border: 3px solid $color-team-bg;
+    border: 3px solid $color_lightergray;
     flex-basis: 341px;
     &:hover {
         border: 0;
-        box-shadow: 0 0 14px 0px $color-team-bg;
+        box-shadow: 0 0 14px 0px $color_lightergray;
     }
 }
 
 .member-image {
     height: 157px;
     width: 157px;
-    background-color: $color-team-bg;
+    background-color: $color_lightergray;
     border-radius: 100%;
     margin: 38px 80px;
     overflow: hidden;
-   @include media (">=tablet", "<desktop")  {
+    @include media (">=tablet", "<=desktop") {
         height: 120px;
         width: 120px;
         margin: 33px 17px;
+    }
+    @include media (">=phone", "<tablet") {
+        margin: 38px 60px;
     }
 }
 
@@ -57,7 +64,7 @@
     width: 260px;
     margin: 20px auto 0;
     padding-bottom: 44px;
-   @include media (">=tablet", "<desktop")  {
+    @include media (">=tablet", "<=desktop") {
         width: 190px;
     }
 }
